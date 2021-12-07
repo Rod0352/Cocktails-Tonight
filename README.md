@@ -6,6 +6,8 @@ Built With
 HTML
 CSS
 Bulma
+js
+
 
 ***screenshot goes here****
 
