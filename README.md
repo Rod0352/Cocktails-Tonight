@@ -2,11 +2,11 @@
 Purpose
 A website application that gives users a random cocktail or a list of cocktails by ingredients presented.
 
-Built With
-HTML
-CSS
-Bulma
-js
+Technologies used
+* HTML
+* CSS (bulma)
+*javascript
+
 
 
 ***screenshot goes here****
