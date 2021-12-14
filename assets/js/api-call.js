@@ -5,6 +5,7 @@ var getCocktails = function(drinks) {
 
     //request to the API URL
     fetch(apiUrlRandom).then(function(response) {
+        console.log(response);
         response.json().then(function(res) {
             console.log(res);
             jsonData = res;
@@ -44,3 +45,5 @@ var getDrinkByIngred = function() {
 //$("#custom-btn").click(function() {
 //     var getCustomDrink =$()
 // })
+
+getCocktails();
