@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktails Tonight</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
     
@@ -16,15 +15,13 @@
 
 <body>
     <section class="hero is-primary">
-        <section class="hero is-info is-large">
+        <section class="hero is-info is-fullheight">
             <div class="hero-head">
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-brand">
                             <a href="./index.html">
-                                <figure class="image is-128x128">
-                                    <img class="is-rounded" src="./assets/images/drink-pour.jpg">
-                                  </figure>
+                                <h2 class="mainTitle">Cocktails Tonight</h2>
                             </a>
                             
                             <span class="navbar-burger" data-target="navbarMenuHeroB">
@@ -44,7 +41,7 @@
                 </nav>
             </div>
 
-            <div class="hero-body container is-widescreen ">
+            <div class="level hero-body container is-widescreen ">
                 <button class="button is-link is-large has-text-centered " id="random-btn">
                     <p class="title">
                         Random
@@ -58,14 +55,25 @@
                         </p>
                         
                     </button>
-                </div>
-            </div>
 
-            <div class="hero-foot">
+                    <div id="drinkOptions" class="select">
+                        <select name="drinks" id="drinks" multiple size="8">
+                          <option value="Scotch">Scotch</option>
+                          <option value="Gin">Gin</option>
+                          <option value="Vodka">Vodka</option>
+                          <option value="Rum">Rum</option>
+                          <option value="Tequila">Tequila</option>
+                          <option value="Whiskey">Whiskey</option>
+                          <option value="Brandy">Brandy</option>
+                          <option value="Hennesy">Hennesy</option>
+                        </select>
+                      </div>
+                    
+                      <div id="choice">
 
-            </div>
+                      </div>
         </section>
-
+        
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./assets/js/script.js"></script>
 </body>

@@ -4,6 +4,16 @@ figure{
 
 .hero{
     background-image: url(../images/neon-drinks.jpg) ;
+    padding: 19px;
+    background-size: cover;
+    background-position: center;
+}
+.mainTitle{
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    border-radius: 25px;
+    border: solid 1px blueviolet;
+    padding: 5px;
 }
 .navbar-end{
     height: 50px;
@@ -12,4 +22,23 @@ figure{
 .navbar-item{
     border-radius: 25px;
     
+}
+button{
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    border: solid 1px blueviolet;
+    margin: 7px;
+}
+body{
+    background-color: cyan;
+}
+#drinkOptions{
+    display: none;
+}
+#itemForm{
+    background: rgba(51, 170, 51, .4);
+    border-radius: 5px;
+    padding: 5px;
+  
 }
