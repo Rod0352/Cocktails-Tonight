@@ -21,11 +21,12 @@ var displayCocktails = function(drinks) {
     console.log(displayCocktails);
 };
 
-// Two ID names on this button??
-//$("#btn-search").click(function() {
-//     var getRandomCocktail = $("#random-cocktail").text();
-//     getCocktails(getRandomCocktails);
-// });
+
+$("#btn-search").click(function() {
+    var getRandomCocktail = $("#random-cocktail").text();
+    getCocktails(getRandomCocktails);
+    console.log(response[drinks[0]]);
+ });
 
 var getDrinkByIngred = function() {
 
@@ -41,9 +42,13 @@ var getDrinkByIngred = function() {
     });
 };
 
-// Not sure about some of the ID names here??
-//$("#custom-btn").click(function() {
-//     var getCustomDrink =$()
-// })
 
-getCocktails();
+$("#custom-btn").click(function() {
+    var getCustomDrink =$()
+ })
+
+getCocktails(); {
+    console.log(response['drinks.strDrink']);
+}
+
+getDrinkByIngred();
