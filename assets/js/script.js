@@ -16,6 +16,7 @@ $("#random-btn").click(function () {
 
 var ingredients = "";
 var selectOptions = function (custom) {
+    
     for (var i = 0; i < ingredients.length; i++) {
         var opt = select.options[i].text;
         var include = document.createElement('select');
@@ -23,30 +24,31 @@ var selectOptions = function (custom) {
         selectOptions.appendChild(include);
         
 
-    }
+    };
 };
 
+var custom = document.getElementById("choice");
 
 
 // custom button displays options
 
-$("#custom-btn").click(function (custom) {
-    // $("#dropdown").toggle();
+$("#custom-btn").click(function () {
     // console.log("This works.");
     $("#drinkOptions").css("display", "block");
 
 });
-var custom = $(document).ready(function () {
-    $("#drinkSelection").click(function (myFunction) {
-        $("#drinkOptions").css("display", "none");
-        $("#random-btn").innerHtml("display", "none");
-    });
-});
+
+// var custom = $(document).ready(function () {
+//     $("#drinkSelection").click(function (myFunction) {
+//         $("#drinkOptions").css("display", "none");
+//         $("#random-btn").innerHtml("display", "none");
+//     });
+// });
 // function to store values selcted
     // get references to select list and display text box
 const element = document.getElementById("drinks");
-const checkValue = element.options[element.selectedIndex].value;
-const checkText = element.options[element.selectedIndex].text;
+const checkValue = element.option[element.selectedIndex].value;
+const checkText = element.option[element.selectedIndex].text;
  var select = $(document).ready(function(){
      $(option).click(function(){
          console.log(value);
