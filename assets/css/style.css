@@ -1,36 +1,37 @@
-figure{
+figure {
     margin-top: 20px;
 }
 
-.hero{
+.hero {
     background-image: url(../images/neon-drinks.jpg) ;
     padding: 19px;
     background-size: cover;
     background-position: center;
 }
-.mainTitle{
+.mainTitle {
     font-family: "Lobster", sans-serif;
-    font-size: 19px;
+    font-size:50px;
     border-radius: 25px;
     border: solid 1px blueviolet;
     padding: 5px;
 }
-.navbar-end{
+.navbar-end {
     height: 50px;
     padding-top: 20px;
+   
 }
-.navbar-item{
+.navbar-item {
     border-radius: 25px;
     
 }
-button{
+button {
     font-family: "Lobster", sans-serif;
     font-size: 20px;
     border-radius: 25px;
     border: solid 1px blueviolet;
     margin: 7px;
 }
-body{
+body {
     background-color: cyan;
 }
 #drinkOptions{
@@ -41,4 +42,10 @@ body{
     border-radius: 5px;
     padding: 5px;
   
+}
+.drink-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }
