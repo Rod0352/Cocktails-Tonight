@@ -8,9 +8,7 @@
     <title>Cocktails Tonight</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
-    
+    <link rel="stylesheet" href="./assets/css/style.css">    
 </head>
 
 <body>
@@ -40,73 +38,59 @@
                     </div>
                 </nav>
             </div>
-
+            
             <div class="level hero-body container is-widescreen ">
-<<<<<<< HEAD
-                <div class="column colmums is-desktop">
-                    <div class="field is grouped">                                        <br>
+                <div class="column columns is-desktop">
+                    <div class="field is grouped">                                       
                     <br>
                     <br>
-                    <button class="button is-link is-large has-text-centered" id="random-btn btn-search">
+                    <button class="button is-link is-large has-text-centered" id="random-cocktail-text">
                         <p class="title">
                             Random Cocktail
                         </p>                                           
                     </button>
-                    <div class="card drink-card" id="random-cocktail">
-                        <h3>placeholder for drink name</h3>
+                    <div class="card drink-card">
+                        <textarea class="textarea is-primary" placeholder="Primary textarea">Want an idea for a cocktail? Click above for a Random Cocktail!</textarea>
                     </div>
                     <br>
                     <br>
                     <div>                
-=======
-                <button class="button is-link is-large has-text-centered " id="random-btn">
-                    <p class="title">
-                        Random
-                    </p>
-                    
-                </button>
-                <div>
->>>>>>> 52171f94f0e23879e81f18214959f2d408cfe38f
                     <button id="custom-btn" class="button is-link is-large has-text-centered ">
                         <p class="title">
                             Custom
                         </p>
                         
                     </button>
-<<<<<<< HEAD
                     
                     </div>   
                
-=======
-
->>>>>>> 52171f94f0e23879e81f18214959f2d408cfe38f
                     <div id="drinkOptions" class="select">
                         <select name="drinks" id="drinks" multiple size="8">
-                          <option class="drink" value="Scotch">Scotch</option>
-                          <option class="drink"value="Gin">Gin</option>
-                          <option class="drink"value="Vodka">Vodka</option>
-                          <option class="drink"value="Rum">Rum</option>
-                          <option class="drink"value="Tequila">Tequila</option>
-                          <option class="drink"value="Whiskey">Whiskey</option>
-                          <option class="drink"value="Brandy">Brandy</option>
-                          <option class="drink"value="Hennesy">Hennesy</option>
+                          <option value="Scotch">Scotch</option>
+                          <option value="Gin">Gin</option>
+                          <option value="Vodka">Vodka</option>
+                          <option value="Rum">Rum</option>
+                          <option value="Tequila">Tequila</option>
+                          <option value="Whiskey">Whiskey</option>
+                          <option value="Brandy">Brandy</option>
+                          <option value="Hennesy">Hennesy</option>
                         </select>
                     </div>
                     
                 <div id="choice">
                 <br>
                 <br>                               
-                <button class="button is-link is-large has-text-centered" id="recipe-btn btn-search">
+                <button class="button is-link is-large has-text-centered" id="recipe-btn">
                     <p class="title">
                         Random Recipe
                     </p>                                           
                 </button>
                 <div class="card recipe-card">
-                    <h3>placeholder for recipe name</h3>
+                    <textarea class="textarea is-primary" placeholder="Primary textarea">Want an idea for date night? Click above for a random recipe.</textarea>
                 </div>
                 <br>
                 <div class="card recipe-card">
-                    <h3>placeholder for You-Tube pop-out window</h3>
+                    <textarea class="textarea is-primary" placeholder="Primary textarea">**placeholder for YouTube pop out**</textarea>
                 </div>
             </div>
         </div>
@@ -115,7 +99,8 @@
         </section>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <!-- <script src="./assets/js/script.js"></script> -->
+        <script src="./assets/js/api-call.js"></script>
 </body>
 
 </html>

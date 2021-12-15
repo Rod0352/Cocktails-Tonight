@@ -45,19 +45,6 @@ $("#custom-btn").click(function () {
 //     });
 // });
 // function to store values selcted
-<<<<<<< HEAD
-//     // get references to select list and display text box
-// const element = document.getElementById("drinks");
-// const checkValue = element.options[element.selectedIndex].value;
-// const checkText = element.options[element.selectedIndex].text;
-//  var select = $(document).ready(function(){
-//      $(option).click(function(){
-//          console.log(value);
-//      }
-//      )
-//  }
-//  )
-=======
     // get references to select list and display text box
 const element = document.getElementById("drinks");
 const checkValue = element.option[element.selectedIndex].value;
@@ -69,4 +56,3 @@ const checkText = element.option[element.selectedIndex].text;
      )
  }
  )
->>>>>>> 52171f94f0e23879e81f18214959f2d408cfe38f

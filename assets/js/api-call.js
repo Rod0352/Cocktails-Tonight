@@ -1,68 +1,48 @@
-$("#btn-search").click(function() {
+$("#random-cocktail").click(function () {
     //retrieve text from textbox
-    var cocktailText  = $("#random-cocktail").text();
+    var cocktailText = $("#random-cocktail-text").text();
     //pass the given text into the getRandomCocktails function
-    var cocktailsResult = getDrinkByIngred(cocktailText);
     //display the results in the console
     console.log(cocktailsResult);
- });
+    console.log('Htest');
+});
 
 
 function getRandomCocktail() {
-    
+
     //format cocktail api url
     var apiUrlRandomDrink = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
     //request to the API URL
-        fetch(apiUrlRandomDrink).then(function(response) {
-        console.log(response);
-        response.json().then(function(res) {
-            console.log(res);
-            jsonData = res;
-            const data = res[0];
+    fetch(apiUrlRandomDrink).then(function (response) {
+        response.json().then(function (res) {
+            $('textarea:eq(0)').text(res.drinks[0].strDrink);
+
         });
-    });      
-       
+    });
+
 };
 
- function displayCocktails(drinks) {
-     // TO DO: add logic to display cocktails to page.
- }
+getRandomCocktail();
 
-//this executes on page load (w/ button click ?)
-getRandomCocktails(); 
-
-// *****************************************************************************************
-$("#btn-search").click(function() {
+$("#recipe-btn").click(function () {
     //retrieve text from textbox
-    var recipeText  = $("#random-recipe").text();
     //pass the given text into the getRandomRecipe function
-    var recipeResult = getDrinkByIngred(cocktailText);
+    var recipeResult = getRandomRecipe();
     //display the results in the console
     console.log(recipeResult);
- });
+});
 
 function getRandomRecipe() {
-    
-    //format cocktail api url
+
+    //format recipe api url
     var apiUrlRandomRecipe = "https://www.themealdb.com/api/json/v1/1/random.php";
 
     //request to the API URL
-        fetch(apiUrlRandomRecipe).then(function(response) {
-        console.log(response);
-        response.json().then(function(res) {
-            console.log(res);
-            jsonData = res;
-            const data = res[0];
-            
+    fetch(apiUrlRandomRecipe).then(function (response) {
+        response.json().then(function (res) {
+            $('textarea:eq(1)').text(res.meals[0].strMeal);
         });
-    });             
+    });
 };
 
-
- function displayRecipe(drinks) {
-     // TO DO: add logic to display cocktails to page.
- };
-
-//this executes on page load (w/ button click ?)
-getRandomRecipe(); 
