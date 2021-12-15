@@ -4,6 +4,7 @@ $("#random-cocktail").click(function () {
     //pass the given text into the getRandomCocktails function
     //display the results in the console
     var cocktailsResult = getRandomCocktail();
+    //log the displayed result
     console.log(cocktailsResult);
     
 });
@@ -18,13 +19,14 @@ function getRandomCocktail() {
     fetch(apiUrlRandomDrink).then(function (response) {
         response.json().then(function (res) {
             $('textarea:eq(0)').text(res.drinks[0].strDrink);
+            return res.drinks[0].strDrink;
 
         });
     });
 
 };
 
-//getRandomCocktail();
+getRandomCocktail();
 
 $("#recipe-btn").click(function () {
     //retrieve text from textbox
@@ -43,6 +45,7 @@ function getRandomRecipe() {
     fetch(apiUrlRandomRecipe).then(function (response) {
         response.json().then(function (res) {
             $('textarea:eq(1)').text(res.meals[0].strMeal);
+            return res.meals[0].strMeal;
         });
     });
 };
