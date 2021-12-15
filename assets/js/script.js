@@ -43,14 +43,14 @@ var custom = $(document).ready(function () {
     });
 });
 // function to store values selcted
-    // get references to select list and display text box
-const element = document.getElementById("drinks");
-const checkValue = element.options[element.selectedIndex].value;
-const checkText = element.options[element.selectedIndex].text;
- var select = $(document).ready(function(){
-     $(option).click(function(){
-         console.log(value);
-     }
-     )
- }
- )
+//     // get references to select list and display text box
+// const element = document.getElementById("drinks");
+// const checkValue = element.options[element.selectedIndex].value;
+// const checkText = element.options[element.selectedIndex].text;
+//  var select = $(document).ready(function(){
+//      $(option).click(function(){
+//          console.log(value);
+//      }
+//      )
+//  }
+//  )

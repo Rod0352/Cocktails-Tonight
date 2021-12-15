@@ -42,18 +42,21 @@
             </div>
             
             <div class="level hero-body container is-widescreen ">
-                <div class="column">
-                    
-                    <button class="button is-link is-large has-text-centered " id="random-btn">
+                <div class="column colmums is-desktop">
+                    <div class="field is grouped">                                        <br>
+                    <br>
+                    <br>
+                    <button class="button is-link is-large has-text-centered" id="random-btn btn-search">
                         <p class="title">
-                            Random
-                        </p>
-                    
+                            Random Cocktail
+                        </p>                                           
                     </button>
-                <div class="card drink-card item-form">
-                    <h3>placeholder for drink name</h3>
-                </div>
-                <div>
+                    <div class="card drink-card" id="random-cocktail">
+                        <h3>placeholder for drink name</h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div>                
                     <button id="custom-btn" class="button is-link is-large has-text-centered ">
                         <p class="title">
                             Custom
@@ -61,9 +64,8 @@
                         
                     </button>
                     
-                    
-                </div>
-                </div>
+                    </div>   
+               
                     <div id="drinkOptions" class="select">
                         <select name="drinks" id="drinks" multiple size="8">
                           <option value="Scotch">Scotch</option>
@@ -75,11 +77,27 @@
                           <option value="Brandy">Brandy</option>
                           <option value="Hennesy">Hennesy</option>
                         </select>
-                      </div>
+                    </div>
                     
-                      <div id="choice">
+                <div id="choice">
+                <br>
+                <br>                               
+                <button class="button is-link is-large has-text-centered" id="recipe-btn btn-search">
+                    <p class="title">
+                        Random Recipe
+                    </p>                                           
+                </button>
+                <div class="card recipe-card">
+                    <h3>placeholder for recipe name</h3>
+                </div>
+                <br>
+                <div class="card recipe-card">
+                    <h3>placeholder for You-Tube pop-out window</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                      </div>
         </section>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

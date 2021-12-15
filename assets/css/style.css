@@ -48,4 +48,19 @@ body {
     font-family: "Lobster", sans-serif;
     font-size: 20px;
     padding: 10px;
+    color: black;
+}
+.recipe-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+
+}
+.about-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    color: black;
 }
