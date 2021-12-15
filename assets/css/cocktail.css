@@ -1,0 +1,40 @@
+body {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/atomic-bar.jpg");
+ }
+
+ .container {padding: 20px;
+  text-align: center;
+  background: #080808;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+ }
+
+ p {
+    font-family: 'Sofia';
+    font-size: 22px;
+ }
+
+ .rdm-cocktail {
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ #drink-section {
+     color: white;
+     display: block;
+     list-style: block;
+ }
+
+ #drink-section img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+ }   
+  
