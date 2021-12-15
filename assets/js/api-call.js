@@ -1,10 +1,11 @@
 $("#random-cocktail").click(function () {
     //retrieve text from textbox
-    var cocktailText = $("#random-cocktail-text").text();
+    //var cocktailText = $("#random-cocktail-text").text();
     //pass the given text into the getRandomCocktails function
     //display the results in the console
+    var cocktailsResult = getRandomCocktail();
     console.log(cocktailsResult);
-    console.log('Htest');
+    
 });
 
 
@@ -29,8 +30,8 @@ $("#recipe-btn").click(function () {
     //retrieve text from textbox
     //pass the given text into the getRandomRecipe function
     var recipeResult = getRandomRecipe();
-    //display the results in the console
-    console.log(recipeResult);
+    console.log(getRandomRecipe);
+    
 });
 
 function getRandomRecipe() {
