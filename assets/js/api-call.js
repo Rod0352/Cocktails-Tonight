@@ -23,7 +23,7 @@ function getRandomCocktail() {
 
 };
 
-getRandomCocktail();
+//getRandomCocktail();
 
 $("#recipe-btn").click(function () {
     //retrieve text from textbox
