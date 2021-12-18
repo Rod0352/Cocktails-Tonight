@@ -7,6 +7,7 @@ Technologies used
 * CSS (bulma)
 *javascript
 
+I work on the button. So clicking on the button will direct you to a cocktail page where you can random choose from any drink you want 
 
 
 ***screenshot goes here****

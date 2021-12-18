@@ -29,7 +29,9 @@ var selectOptions = function (custom) {
 
 var custom = document.getElementById("choice");
 
+    let drinkSection = document.querySelector('#drink-section');
 
+<<<<<<< HEAD
 // custom button displays options
 
 $("#custom-btn").click(function () {
@@ -56,3 +58,33 @@ const checkText = element.option[element.selectedIndex].text;
      )
  }
  )
+=======
+    let drinkName = document.createElement('h2');
+    drinkName.innerHTML = cocktail.drinks[0].strDrink;
+
+    drinkSection.appendChild(drinkName);
+
+    let img = document.createElement('img');
+    img.src = cocktail.drinks[0].strDrinkThumb;
+
+    drinkSection.appendChild(img);
+
+    for(let i=1; i<16; i++){
+        console.log();
+
+        if(cocktail.drinks[0][`strIngredient${i}`] == null || cocktail.drinks[0][`strIngredient${i}`] == ""){
+            break;
+        }
+
+        let ingredient = document.createElement('ons-list-item');
+        ingredient.innerHTML = cocktail.drinks[0][`strMeasure${i}`]; + ' :' + cocktail.drinks[0][`strIngredient${i}`];
+
+        drinkSection.appendChild(ingredient);
+    }
+
+    let card = document.createElement('ons-card');
+    card.innerHTML = cocktail.drinks[0].strInstructions;
+
+    drinkSection.appendChild(card);
+}
+>>>>>>> ef8d516c548c97056b1af54b216dfa384cfcfa43
