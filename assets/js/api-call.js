@@ -1,4 +1,4 @@
-$("#random-cocktail").click(function () {
+$("#random-cocktail-text").click(function () {
     //retrieve text from textbox
     //var cocktailText = $("#random-cocktail-text").text();
     //pass the given text into the getRandomCocktails function
@@ -26,7 +26,7 @@ function getRandomCocktail() {
 
 };
 
-getRandomCocktail();
+//getRandomCocktail();
 
 $("#recipe-btn").click(function () {
     //retrieve text from textbox
@@ -45,8 +45,12 @@ function getRandomRecipe() {
     fetch(apiUrlRandomRecipe).then(function (response) {
         response.json().then(function (res) {
             $('textarea:eq(1)').text(res.meals[0].strMeal);
+            $('#link-youtube').attr('href', res.meals[0].strYoutube);
+            console.log(res.meals[0].strYoutube);
             return res.meals[0].strMeal;
+            
         });
     });
 };
+
 

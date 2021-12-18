@@ -33,19 +33,19 @@ var custom = document.getElementById("choice");
 // custom button displays options
 
 $("#custom-btn").click(function () {
-    // console.log("This works.");
+     console.log("This works.");
     $("#drinkOptions").css("display", "block");
 
 });
 
-// var custom = $(document).ready(function () {
-//     $("#drinkSelection").click(function (myFunction) {
-//         $("#drinkOptions").css("display", "none");
-//         $("#random-btn").innerHtml("display", "none");
-//     });
-// });
-// function to store values selcted
-    // get references to select list and display text box
+ var custom = $(document).ready(function () {
+     $("#drinkSelection").click(function (myFunction) {
+         $("#drinkOptions").css("display", "none");
+         $("#random-btn").innerHtml("display", "none");
+     });
+ });
+ function to store values selcted
+   // get references to select list and display text box
 const element = document.getElementById("drinks");
 const checkValue = element.option[element.selectedIndex].value;
 const checkText = element.option[element.selectedIndex].text;

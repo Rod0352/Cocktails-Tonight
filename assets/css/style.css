@@ -24,7 +24,7 @@ figure {
     border-radius: 25px;
     
 }
-button {
+button, .link-button {
     font-family: "Lobster", sans-serif;
     font-size: 20px;
     border-radius: 25px;
@@ -63,4 +63,9 @@ body {
     font-family: "Lobster", sans-serif;
     font-size: 20px;
     color: black;
+}
+#text-spot {
+    background-color: rgb(185, 159, 209);
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
 }
