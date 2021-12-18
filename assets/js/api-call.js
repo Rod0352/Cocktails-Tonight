@@ -1,10 +1,9 @@
 $("#random-cocktail-text").click(function () {
+    
     //retrieve text from textbox
-    //var cocktailText = $("#random-cocktail-text").text();
-    //pass the given text into the getRandomCocktails function
-    //display the results in the console
-    var cocktailsResult = getRandomCocktail();
-    //log the displayed result
+      var cocktailsResult = getRandomCocktail();
+    
+      //log the displayed result
     console.log(cocktailsResult);
     
 });
