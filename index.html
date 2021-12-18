@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails Tonight</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">    
+</head>
+<body>
+    <!--Hero & NavBar-->
+    <section class="hero is-primary hero is-info is-fullheight">    
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="./index.html">
+                                <h2 class="mainTitle">Cocktails Tonight</h2>
+                            </a>
+                            
+                            <span class="navbar-burger" data-target="navbarMenuHeroB">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <!-- <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <a class="navbar-item is-active ">
+                                    Favorites
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+            <!--Main column/site body-->            
+            <div class="level hero-body container is-widescreen ">
+                <div class="column columns is-desktop">
+                    <div class="field is grouped center" style="text-align: center;">                                       
+                    <br>
+                    <br>
+                    <!--Random Cocktail Search-->
+                    <button class="button is-link is-large has-text-centered" id="random-cocktail-text">
+                        <p class="title">
+                            Random Cocktail
+                        </p>                                           
+                    </button>
+                    <div class="card drink-card">
+                        <textarea class="textarea is-primary textarea is-small" id="text-spot">Want an idea for a cocktail? Click above for a Random Cocktail!</textarea>
+                    </div>
+                    <br>
+                    <br>
+                    <!--Custom cocktail search-->
+                    <div>                
+                    <button id="custom-btn" class="button is-link is-large has-text-centered ">
+                        <p class="title">
+                            Custom
+                        </p>
+                        
+                    </button>                    
+                    </div>   
+                    <div id="drinkOptions" class="select">
+                        <select name="drinks" id="drinks" multiple size="8">
+                          <option value="Scotch">Scotch</option>
+                          <option value="Gin">Gin</option>
+                          <option value="Vodka">Vodka</option>
+                          <option value="Rum">Rum</option>
+                          <option value="Tequila">Tequila</option>
+                          <option value="Whiskey">Whiskey</option>
+                          <option value="Brandy">Brandy</option>
+                          <option value="Hennesy">Hennesy</option>
+                        </select>
+                    </div>
+                    
+                <div id="choice">
+                <br>
+                <br>
+                <!--Random Recipe button-->                               
+                <button class="button is-link is-large has-text-centered" id="recipe-btn">
+                    <p class="title">
+                        Random Recipe
+                    </p>                                           
+                </button>
+                <div class="card recipe-card">
+                    <textarea class="textarea is-primary textarea is-small" id="text-spot">Want an idea for date night? Click above for a random recipe.</textarea>
+                </div>
+                <br>
+                <!-- YouTube Recipe pop-out window -->
+                <button class="button is-link is-large has-text-centered link-button">
+                    <a href="" id="link-youtube" target="_blank">Watch recipe on YouTube</a>
+                </button>
+            </div>
+            
+            </div>
+        </div>
+
+        
+
+        </section>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/api-call.js"></script>
+        <script src="./assets/js/script.js"></script> 
+</body>
+
+</html>

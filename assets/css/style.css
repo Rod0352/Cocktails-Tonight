@@ -1,0 +1,71 @@
+figure {
+    margin-top: 20px;
+}
+
+.hero {
+    background-image: url(../images/neon-drinks.jpg) ;
+    padding: 19px;
+    background-size: cover;
+    background-position: center;
+}
+.mainTitle {
+    font-family: "Lobster", sans-serif;
+    font-size:50px;
+    border-radius: 25px;
+    border: solid 1px blueviolet;
+    padding: 5px;
+}
+.navbar-end {
+    height: 50px;
+    padding-top: 20px;
+   
+}
+.navbar-item {
+    border-radius: 25px;
+    
+}
+button, .link-button {
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    border: solid 1px blueviolet;
+    margin: 7px;
+}
+body {
+    background-color: cyan;
+}
+#drinkOptions{
+    display: none;
+}
+#itemForm{
+    background: rgba(51, 170, 51, .4);
+    border-radius: 5px;
+    padding: 5px;
+  
+}
+.drink-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+.recipe-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+
+}
+.about-card {
+    background-color: rgb(185, 159, 209);
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+    color: black;
+}
+#text-spot {
+    background-color: rgb(185, 159, 209);
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
