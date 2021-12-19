@@ -5,6 +5,8 @@ A website application that gives users a random cocktail and a random recipe per
 Technologies used
 HTML, CSS, Bulma, JavaScript, jQuery, google fonts.
 
+https://rod0352.github.io/Cocktails-Tonight/
+
 ![image](https://user-images.githubusercontent.com/91485484/146648083-26e768e5-c71e-415a-9a3b-e8ee31584aab.png)
 
 
